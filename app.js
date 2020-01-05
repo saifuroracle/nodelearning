@@ -16,7 +16,7 @@ mongoose.connect(db, options)
     .then(() => console.log("💻 Mondodb Connected"))
     .catch(err => console.error(err));
 
-var books = require("./model/Book.model");
+var books = require("./models/Book.model");
 const Cat = mongoose.model('Cat', { name: String });
 
 const kitty = new Cat({ name: 'Zildjian' });
